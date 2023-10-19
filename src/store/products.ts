@@ -11,7 +11,7 @@ export const useProduct = create<HomeStore>(set => ({
   products: [],
   getProducts: async () => {
     try {
-      const { data } = await getFakeProduct.get<Product[]>('?limit=5');
+      const { data } = await getFakeProduct.get<Product[]>('?limit=10');
       set({ products: data });
     } catch (e) {
       console.log(e);
