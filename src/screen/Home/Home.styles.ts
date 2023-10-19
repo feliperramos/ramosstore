@@ -1,0 +1,11 @@
+import { StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
+
+export const Container = styled.View``;
+
+export const inlineStyles = StyleSheet.create({
+  flatlist: {
+    flexGrow: 1,
+    padding: 16,
+  },
+});
