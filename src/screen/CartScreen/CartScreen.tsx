@@ -6,6 +6,7 @@ import {
   getCartTotalValue,
 } from '../../utils/quantityItems';
 import { Container } from './CartScreen.style';
+import CartList from '../../components/CartList/CartList';
 
 function CartScreen() {
   const cartItems = useCartStore(state => state.cartItems);
@@ -15,7 +16,8 @@ function CartScreen() {
 
   return (
     <Container>
-      <Text>{total}</Text>
+      <CartList cartItems={validCartItems} />
+
     </Container>
   );
 }
