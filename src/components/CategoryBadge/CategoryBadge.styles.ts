@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 export const CategoryContainer = styled.View`
   background-color: ${({ theme }) => theme.colors.primary.purple_dark};
   border-radius: 30px;
-  padding: 8px;
+  padding: 2px;
   max-width: 90px;
   align-items: center;
 `;

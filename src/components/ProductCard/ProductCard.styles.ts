@@ -17,6 +17,7 @@ export const Container = styled.View`
 export const ProductContainer = styled.View`
   flex: 1;
   margin-top: 8px;
+  justify-content: space-around;
 `;
 
 export const TitleSection = styled.View`
@@ -36,9 +37,9 @@ export const TitleText = styled.Text.attrs({
 `;
 
 export const PriceText = styled.Text`
-  color: ${({ theme }) => theme.colors.primary.purple_light};
+  color: ${({ theme }) => theme.colors.primary.acqua};
   font-weight: ${({ theme }) => theme.fonts.weight.bolder};
-  font-size: 16px;
+  font-size: 18px;
 `;
 
 export const inlineStyles = StyleSheet.create({
