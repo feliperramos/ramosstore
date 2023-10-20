@@ -2,7 +2,7 @@ import React from 'react';
 import { FlatList, ListRenderItem } from 'react-native';
 
 import { Product } from '../../types/Product';
-import ProductCard from '../../components/ProductCard/ProductCard';
+import { ProductCard } from '../../components/';
 import { useProduct } from '../../store/products';
 
 import { Container, inlineStyles } from './Home.styles';
@@ -15,13 +15,18 @@ function HomeScreen() {
   );
 
   return (
-    <Container>
+    <Container
+      horizontal
+      showsVerticalScrollIndicator
+      directionalLockEnabled
+      alwaysBounceVertical={false}>
       <FlatList
-        contentContainerStyle={inlineStyles.flatlist}
-        horizontal
         data={getProduct}
-        initialNumToRender={5}
         renderItem={renderItem}
+        contentContainerStyle={inlineStyles.flatlist}
+        numColumns={2}
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
       />
     </Container>
   );
