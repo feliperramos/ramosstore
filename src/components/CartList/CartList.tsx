@@ -4,7 +4,7 @@ import { CartItem as CartItemGlobalProps } from '../../types/CartItem';
 import CartItem from '../CartItem/CartItem';
 
 interface CartListProps {
-  cartItems: CartItem[];
+  cartItems: CartItemGlobalProps[];
 }
 
 function CartList({ cartItems }: CartListProps) {

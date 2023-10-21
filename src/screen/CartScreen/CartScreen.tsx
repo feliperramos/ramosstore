@@ -17,7 +17,6 @@ function CartScreen() {
   return (
     <Container>
       <CartList cartItems={validCartItems} />
-
     </Container>
   );
 }

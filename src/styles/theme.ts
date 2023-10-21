@@ -7,6 +7,11 @@ const theme = {
       green: '#B3E9C7',
       green_light: '#C2F8CB',
     },
+    feedback: {
+      alert: '#e5383b',
+      success: '#4BB543',
+      warning: '#E9D502',
+    },
     white: '#FFFFFF',
     black: '#000000',
     gray_750: '#545454',

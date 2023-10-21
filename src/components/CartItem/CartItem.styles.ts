@@ -10,7 +10,7 @@ export const Container = styled.View`
 
 export const ProductContainer = styled.View`
   margin-horizontal: 8px;
-  flex:1;
+  flex: 1;
 `;
 
 export const Title = styled.Text`
@@ -48,6 +48,8 @@ export const Total = styled.Text`
   margin-left: 16px;
   flex: 1.2;
 `;
+
+export const Button = styled.TouchableOpacity``;
 
 export const inlineStyles = StyleSheet.create({
   image: {

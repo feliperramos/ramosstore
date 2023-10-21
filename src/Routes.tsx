@@ -16,7 +16,6 @@ import { CartButton } from './components';
 const Stack = createNativeStackNavigator();
 
 export function Routes() {
-
   const headerOptions: NativeStackNavigationOptions = {
     // eslint-disable-next-line react/no-unstable-nested-components
     headerTitle: () => <Image source={Logo} style={inlineStyles.header} />,
