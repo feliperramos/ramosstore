@@ -3,6 +3,9 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex-direction: row;
+  border: 1px solid ${({ theme }) => theme.colors.gray_100};
+  margin: 8px;
+  padding: 8px;
 `;
 
 export const ProductContainer = styled.View`

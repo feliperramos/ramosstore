@@ -14,6 +14,7 @@ import { Image } from 'react-native';
 import { currencyFormatter } from '../../utils/currencyFormatter';
 import GroupButton from '../GroupButton/GroupButton';
 import { useCartStore } from '../../store/cart';
+import { getProductTotalValue } from '../../utils/quantityItems';
 
 interface CartItemProps {
   cart: CartItemProp;
@@ -28,6 +29,8 @@ function CartItem({ cart }: CartItemProps) {
 
   const handleDecreaseQuantity = () => decreaseQuantity(id);
   const handleIncreaseQuantity = () => increaseQuantity(cart);
+
+  const totalItem = getProductTotalValue({ quantity, price });
 
   return (
     <Container>
@@ -48,6 +51,7 @@ function CartItem({ cart }: CartItemProps) {
             increaseQuantity={handleIncreaseQuantity}>
             {quantity}
           </GroupButton>
+          <Total>{currencyFormatter(totalItem)}</Total>
         </TotalWrap>
       </ProductContainer>
     </Container>

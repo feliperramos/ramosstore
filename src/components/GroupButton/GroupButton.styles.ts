@@ -3,9 +3,12 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 2px;
   border-width: 1px;
+  max-height: 32px;
+  width: 100%;
+  max-width: 170px;
   border-color: ${({ theme }) => theme.colors.primary.purple_dark};
   flex: 1 0 auto;
   position: relative;
