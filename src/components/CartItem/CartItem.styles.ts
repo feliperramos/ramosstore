@@ -4,7 +4,8 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex-direction: row;
   border: 1px solid ${({ theme }) => theme.colors.gray_100};
-  margin: 8px;
+  margin-horizontal: 8px;
+  margin-top: 8px;
   padding: 8px;
 `;
 
@@ -27,7 +28,7 @@ export const RowWrap = styled.View`
 `;
 
 export const Price = styled.Text`
-  color: ${({ theme }) => theme.colors.primary.purple_dark};
+  color: ${({ theme }) => theme.colors.primary.purple_light};
   font-weight: ${({ theme }) => theme.fonts.weight.bolder};
   font-size: 16px;
   line-height: 20px;
@@ -41,7 +42,7 @@ export const TotalWrap = styled.View`
 `;
 
 export const Total = styled.Text`
-  color: ${({ theme }) => theme.colors.primary.purple_light};
+  color: ${({ theme }) => theme.colors.primary.purple_dark};
   font-weight: ${({ theme }) => theme.fonts.weight.bold};
   font-size: 16px;
   line-height: 20px;
