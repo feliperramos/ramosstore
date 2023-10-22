@@ -13,3 +13,17 @@ export const Footer = styled.View`
   padding: 8px;
   padding-top: 8px;
 `;
+
+export const Button = styled.TouchableOpacity`
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.primary.purple_dark};
+  border-radius: 32px;
+  padding: 4px;
+`;
+
+export const ButtonText = styled.Text`
+  color: ${({ theme }) => theme.colors.white};
+  font-weight: ${({ theme }) => theme.fonts.weight.bold};
+  font-size: 16px;
+  text-align: center;
+`;
